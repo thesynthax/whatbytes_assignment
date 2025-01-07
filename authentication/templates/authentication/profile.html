@@ -1,0 +1,12 @@
+<h1>Profile</h1>
+<p><strong>Username:</strong> {{ user.username }}</p>
+<p><strong>Email:</strong> {{ user.email }}</p>
+<p><strong>Date Joined:</strong> {{ user.date_joined|date:"F j, Y, g:i a" }}</p>
+<p><strong>Last Updated:</strong> {{ user.last_login|date:"F j, Y, g:i a" }}</p>
+
+
+<ul>
+    <li><a href="{% url 'dashboard' %}">Back to Dashboard</a></li>
+    <li><a href="{% url 'logout' %}">Logout</a></li>
+</ul>
+
